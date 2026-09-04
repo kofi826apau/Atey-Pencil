@@ -57,8 +57,10 @@ export default function Hero() {
               initial={{ scale: 1.05 }}
               animate={{ scale: 1 }}
               transition={{ duration: 2.5, ease: [0.22, 1, 0.36, 1] }}
-              src="/images/artwork/hero-01.jpg"
+              src="/images/artwork/IMG_7605.jpg"
               alt="Atey Pencil Artwork"
+              loading="eager"
+              fetchPriority="high"
               className="w-full h-full object-cover"
             />
           </div>

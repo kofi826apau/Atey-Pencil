@@ -1,12 +1,20 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, Suspense, lazy } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import GalleryPage from './pages/GalleryPage';
-import CommissionPage from './pages/CommissionPage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
 import ScrollToTop from './components/ScrollToTop';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const GalleryPage = lazy(() => import('./pages/GalleryPage'));
+const CommissionPage = lazy(() => import('./pages/CommissionPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
+
+// Fallback loader to show while a page component is being loaded
+const PageLoader = () => (
+  <div className="w-full h-full min-h-[60vh] flex items-center justify-center bg-paper">
+    <div className="w-8 h-8 border-2 border-earth/20 border-t-earth rounded-full animate-spin"></div>
+  </div>
+);
 
 export default function App() {
   const [currentHash, setCurrentHash] = useState(window.location.hash);
@@ -94,7 +102,9 @@ export default function App() {
     <div className="min-h-screen bg-paper text-ink selection:bg-earth selection:text-paper font-sans flex flex-col">
       <Header />
       <main className="flex-1">
-        {isGallery ? <GalleryPage /> : isCommission ? <CommissionPage /> : isAbout ? <AboutPage /> : isContact ? <ContactPage /> : <HomePage />}
+        <Suspense fallback={<PageLoader />}>
+          {isGallery ? <GalleryPage /> : isCommission ? <CommissionPage /> : isAbout ? <AboutPage /> : isContact ? <ContactPage /> : <HomePage />}
+        </Suspense>
       </main>
       <ScrollToTop />
       <Footer />

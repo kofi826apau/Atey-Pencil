@@ -17,7 +17,7 @@ export default function AboutPreview() {
              <motion.img 
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 2, ease: "easeOut" }}
-              src="/images/artwork/about-01.jpg" 
+              src="/images/artwork/IMG_7744.jpg" 
               alt="Atey - Portrait Artist"
               className="w-full h-full object-cover"
             />
