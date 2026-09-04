@@ -1,0 +1,8 @@
+{
+  "name": "Atey Pencil",
+  "description": "Premium hand-drawn pencil portraits and custom fine art by Atey Pencil in Ghana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
