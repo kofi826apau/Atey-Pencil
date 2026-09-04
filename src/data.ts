@@ -23,7 +23,7 @@ export const siteData: ArtistConfig = {
       id: "1",
       title: "Silent Symphony",
       category: "Portrait",
-      imageUrl: "/images/artwork/portrait-01.jpg", 
+      imageUrl: "/images/artwork/IMG_3862.jpg", 
       layout: "featured",
       year: "2025",
       description: "An intimate exploration of stillness. Graphite and charcoal on 100% cotton archival paper."
@@ -32,7 +32,7 @@ export const siteData: ArtistConfig = {
       id: "2",
       title: "Generations",
       category: "Family",
-      imageUrl: "/images/artwork/family-01.jpg",
+      imageUrl: "/images/artwork/IMG_3950.jpg",
       layout: "portrait",
       year: "2024",
       description: "A commissioned piece capturing the bond between a father and son, emphasizing texture and shared expressions."
@@ -41,7 +41,7 @@ export const siteData: ArtistConfig = {
       id: "3",
       title: "The Vow",
       category: "Couple",
-      imageUrl: "/images/artwork/couple-01.jpg",
+      imageUrl: "/images/artwork/IMG_5372.jpg",
       layout: "square",
       year: "2025",
       description: "A wedding anniversary commission highlighting the subtle details of affection and lighting."
@@ -50,7 +50,7 @@ export const siteData: ArtistConfig = {
       id: "4",
       title: "Enduring Memory",
       category: "Portrait",
-      imageUrl: "/images/artwork/portrait-02.jpg",
+      imageUrl: "/images/artwork/IMG_5726.jpg",
       layout: "landscape",
       year: "2023",
       description: "A memorial tribute piece drawn with high-contrast charcoal for a dramatic, timeless presence."
@@ -59,7 +59,7 @@ export const siteData: ArtistConfig = {
       id: "5",
       title: "Soulful Eyes",
       category: "Custom",
-      imageUrl: "/images/artwork/portrait-03.jpg",
+      imageUrl: "/images/artwork/IMG_6308.jpg",
       layout: "portrait",
       year: "2026",
       description: "Detailed graphite study focusing purely on the emotional depth communicated through the eyes."
@@ -68,7 +68,7 @@ export const siteData: ArtistConfig = {
       id: "6",
       title: "Golden Anniversary",
       category: "Couple",
-      imageUrl: "/images/artwork/couple-02.jpg",
+      imageUrl: "/images/artwork/IMG_6471.jpg",
       layout: "square",
       year: "2024",
       description: "Celebrating fifty years of marriage. This piece perfectly balances softness and intricate facial details."
@@ -77,7 +77,7 @@ export const siteData: ArtistConfig = {
       id: "7",
       title: "Iconic",
       category: "Celebrity",
-      imageUrl: "/images/artwork/portrait-04.jpg",
+      imageUrl: "/images/artwork/IMG_6497.jpg",
       layout: "portrait",
       year: "2025",
       description: "A tribute portrait of a celebrated artist, utilizing bold, expressive pencil strokes."
@@ -86,7 +86,7 @@ export const siteData: ArtistConfig = {
       id: "8",
       title: "The Siblings",
       category: "Family",
-      imageUrl: "/images/artwork/family-02.jpg",
+      imageUrl: "/images/artwork/IMG_7429.jpg",
       layout: "landscape",
       year: "2026",
       description: "A large-scale A2 commission capturing three siblings. Patiently layered graphite to create realistic depth."
