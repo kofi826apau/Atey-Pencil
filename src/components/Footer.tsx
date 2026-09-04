@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-6">
               <a href="#/#faq" className="hover:text-paper transition-colors">FAQ</a>
-              <a href={`mailto:${siteData.contact.email}`} className="hover:text-paper transition-colors">Contact</a>
+              <a href="#/contact" className="hover:text-paper transition-colors">Contact</a>
               <a href={`https://wa.me/${siteData.contact.whatsapp.replace(/\D/g, '')}`} target="_blank" rel="noreferrer" className="hover:text-paper transition-colors">WhatsApp</a>
             </div>
             <div className="flex flex-col gap-6">

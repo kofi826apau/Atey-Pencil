@@ -45,7 +45,7 @@ export default function Header() {
           <a href="#/commission" className="hover:text-ink transition-colors duration-300">Commissions</a>
           <a href="#/about" className="hover:text-ink transition-colors duration-300">About</a>
           <a href="#/#faq" className="hover:text-ink transition-colors duration-300">FAQ</a>
-          <a href="#/#contact" className="hover:text-ink transition-colors duration-300">Contact</a>
+          <a href="#/contact" className="hover:text-ink transition-colors duration-300">Contact</a>
         </nav>
 
         {/* Primary CTA - Hidden on mobile */}
@@ -91,7 +91,7 @@ export default function Header() {
               <a href="#/commission" onClick={closeMenu} className="font-serif text-2xl text-ink hover:text-earth transition-colors">Commissions</a>
               <a href="#/about" onClick={closeMenu} className="font-serif text-2xl text-ink hover:text-earth transition-colors">About</a>
               <a href="#/#faq" onClick={closeMenu} className="font-serif text-2xl text-ink hover:text-earth transition-colors">FAQ</a>
-              <a href="#/#contact" onClick={closeMenu} className="font-serif text-2xl text-ink hover:text-earth transition-colors">Contact</a>
+              <a href="#/contact" onClick={closeMenu} className="font-serif text-2xl text-ink hover:text-earth transition-colors">Contact</a>
               
               <div className="w-12 h-[1px] bg-stone/20 my-2"></div>
               

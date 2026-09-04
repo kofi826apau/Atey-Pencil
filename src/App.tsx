@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import GalleryPage from './pages/GalleryPage';
 import CommissionPage from './pages/CommissionPage';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
@@ -14,7 +15,9 @@ export default function App() {
   const isGallery = currentHash === '#/gallery';
   const isCommission = currentHash === '#/commission';
   const isAbout = currentHash === '#/about';
-  const pageKey = isGallery ? 'gallery' : isCommission ? 'commission' : isAbout ? 'about' : 'home';
+  const isContact = currentHash === '#/contact';
+
+  const pageKey = isGallery ? 'gallery' : isCommission ? 'commission' : isAbout ? 'about' : isContact ? 'contact' : 'home';
   
   const previousPageKey = useRef(pageKey);
 
@@ -91,7 +94,7 @@ export default function App() {
     <div className="min-h-screen bg-paper text-ink selection:bg-earth selection:text-paper font-sans flex flex-col">
       <Header />
       <main className="flex-1">
-        {isGallery ? <GalleryPage /> : isCommission ? <CommissionPage /> : isAbout ? <AboutPage /> : <HomePage />}
+        {isGallery ? <GalleryPage /> : isCommission ? <CommissionPage /> : isAbout ? <AboutPage /> : isContact ? <ContactPage /> : <HomePage />}
       </main>
       <ScrollToTop />
       <Footer />
